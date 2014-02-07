@@ -19,3 +19,5 @@ galaxy_info:
     - wheezy
   categories:
   - monitoring
+dependencies:
+  - zabbix-common
