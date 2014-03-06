@@ -30,6 +30,6 @@
   tags: ["configuration","zabbix-agent","zabbix"]
 
 - name: ensure zabbix agent started/stopped
-  service: name=zabbix-agent state={{ zabbix_agent_service_state }} enabled={{ zabbix_agent_service_enabled }}
+  service: name=zabbix-agent state={{ zabbix_agent_service_state }} enabled={{ zabbix_agent_service_enabled }} pattern="/zabbix_agentd"
   tags: ["configuration","service","zabbix-agent","zabbix"]
 
