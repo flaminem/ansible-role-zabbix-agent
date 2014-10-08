@@ -11,7 +11,7 @@ zabbix_agent_group: "zabbix"
 
 # NOTE: keep the trailing / !
 zabbix_agent_config_include: /etc/zabbix/zabbix_agentd.d/
-zabbix_agent_config_include_confs: ["process","sockstat"]
+zabbix_agent_config_include_confs: ["process","sockstat", "diskstats", "meminfo"]
 
 # Package states: installed or latest
 zabbix_agent_pkg_state: installed
