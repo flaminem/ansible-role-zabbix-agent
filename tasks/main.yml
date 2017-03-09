@@ -24,8 +24,8 @@
   tags: ["configuration","zabbix-agent","zabbix"]
 
 - name: copy additional configs
-  copy: src={{ item }}.conf dest={{ zabbix_agent_config_include }}/{{item}}.conf
-  with_items: zabbix_agent_config_include_confs
+  copy: src={{ item }}.conf dest={{ zabbix_agent_config_include }}/{{ item }}.conf
+  with_items: '{{ zabbix_agent_config_include_confs }}'
   notify: restart zabbix-agent
   tags: ["configuration","zabbix-agent","zabbix"]
 
